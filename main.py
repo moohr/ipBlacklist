@@ -29,12 +29,11 @@ async def main():
     results = await asyncio.gather(*tasks)
     for result in results:
         await get_ips(result)
-    print(len(iplist))
     deduped = set(iplist)
-    print(len(deduped))
+    print("Total IPs:", len(deduped))
     with open("list.txt", "w") as file:
         file.write('\n'.join(deduped))
-    if config["upload"] == True:
+    if config["upload"]:
         upload.upload_list(deduped)
 
 
