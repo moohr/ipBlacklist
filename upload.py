@@ -1,5 +1,4 @@
 import os
-
 import requests
 def create_list(headers, account_id):
     url = "https://api.cloudflare.com/client/v4/" + "accounts/" + account_id + "/rules/lists"
@@ -9,7 +8,6 @@ def create_list(headers, account_id):
       "name": "openproxy"
     }
     r = requests.post(url, json=data, headers=headers)
-    print(r.text + "post")
     if r.status_code == 200:
         return r.json()['result']['id']
     else:
@@ -20,7 +18,6 @@ def get_list_id(headers, account_id):
     url = "https://api.cloudflare.com/client/v4/" + "accounts/" + account_id + "/rules/lists"
     resp = requests.get(url, headers=headers)
     lists = resp.json()['result']
-    print(lists)
     for list in lists:
         if list['name'] == "openproxy":
             return list['id']
@@ -32,13 +29,10 @@ def update_list(headers, account_id, list_id, iplist):
     data = []
     for ip in iplist:
         data.append({"ip": ip.strip()})
-    print(data)
     resp = requests.put(url, json=data, headers=headers)
-    print(resp.json())
 
 
 def get_account_id(headers):
-    print(headers)
     resp = requests.get("https://api.cloudflare.com/client/v4/" + "accounts", headers=headers)
     return resp.json()['result'][0]['id']
 
@@ -55,5 +49,4 @@ def upload_list(iplist):
 
     account_id = get_account_id(headers)
     list_id = get_list_id(headers, account_id)
-    print(list_id)
     update_list(headers, account_id, list_id, iplist)

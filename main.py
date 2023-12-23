@@ -1,4 +1,3 @@
-import os
 import yaml
 import re
 import asyncio
@@ -6,10 +5,6 @@ import httpx
 
 import upload
 
-#ip_pattern = r'\B(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?::\d{1,5})?\B'
-#ip_pattern = r'\B(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?::\d{1,5})?:[0-9]{1,5}\B'
-#ip_pattern = r'\B(?:\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+)\B'
-#ip_pattern = r'\B\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\B'
 #ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}:\d{1,5}\b'
 ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
 iplist = []
@@ -37,9 +32,10 @@ async def main():
     print(len(iplist))
     deduped = set(iplist)
     print(len(deduped))
-    with open("iplist.txt", "w") as file:
+    with open("list.txt", "w") as file:
         file.write('\n'.join(deduped))
-    upload.upload_list(deduped)
+    if config["upload"] == True:
+        upload.upload_list(deduped)
 
 
 if __name__ == "__main__":
