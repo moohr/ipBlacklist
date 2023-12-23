@@ -9,6 +9,6 @@ sources:
   - https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5.txt
   - https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4.txt
   - https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS.txt
-#  - https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/http.txt
-#  - https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/socks4.txt
-#  - https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/socks5.txt
+  - https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/http.txt
+  - https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/socks4.txt
+  - https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/socks5.txt
