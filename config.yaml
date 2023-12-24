@@ -14,6 +14,7 @@ sources:
   - https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/socks4.txt
   - https://raw.githubusercontent.com/MuRongPIG/Proxy-Master/main/socks5.txt
   - https://api.proxyscrape.com/v2/?request=getproxies&protocol=http
+  - https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4
   - https://openproxy.space/list/http
   - https://openproxylist.xyz/http.txt
   - https://proxyspace.pro/http.txt
@@ -111,3 +112,92 @@ sources:
   - https://raw.githubusercontent.com/zevtyardt/proxy-list/main/socks5.txt
   - https://raw.githubusercontent.com/zloi-user/hideip.me/main/socks5.txt
   - https://www.proxy-list.download/api/v1/get?type=socks5
+  - https://free-proxy-list.net/
+  - https://proxyscrape.com/free-proxy-list
+  - https://proxylist.geonode.com/api/proxy-list?limit=1000&page=1&sort_by=lastChecked&sort_type=desc
+  - https://hidemy.io/en/proxy-list/
+  - https://hidemy.io/en/proxy-list/?start=64#list
+  - https://hidemy.io/en/proxy-list/?start=128#list
+  - https://www.freeproxy.world/
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=2
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=3
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=4
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=5
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=6
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=7
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=8
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=9
+  - https://www.freeproxy.world/?type=&anonymity=&country=&speed=&port=&page=10
+  - http://free-proxy.cz/en/
+  - http://free-proxy.cz/en/proxylist/main/2
+  - http://free-proxy.cz/en/proxylist/main/3
+  - http://free-proxy.cz/en/proxylist/main/4
+  - http://free-proxy.cz/en/proxylist/main/5
+  - http://free-proxy.cz/en/proxylist/main/6
+  - http://free-proxy.cz/en/proxylist/main/7
+  - http://free-proxy.cz/en/proxylist/main/8
+  - http://free-proxy.cz/en/proxylist/main/9
+  - http://free-proxy.cz/en/proxylist/main/10
+  - https://spys.one/en/
+  - https://proxy-list.org/english/index.php
+  - https://proxy-list.org/english/index.php?p=2
+  - https://proxy-list.org/english/index.php?p=3
+  - https://proxy-list.org/english/index.php?p=4
+  - https://proxy-list.org/english/index.php?p=5
+  - https://proxy-list.org/english/index.php?p=6
+  - https://proxy-list.org/english/index.php?p=7
+  - https://proxy-list.org/english/index.php?p=8
+  - https://proxy-list.org/english/index.php?p=9
+  - https://proxy-list.org/english/index.php?p=10
+  - https://proxydb.net/
+  - https://advanced.name/freeproxy
+  - https://advanced.name/freeproxy?page=2
+  - https://advanced.name/freeproxy?page=3
+  - https://advanced.name/freeproxy?page=4
+  - https://advanced.name/freeproxy?page=5
+  - https://advanced.name/freeproxy?page=6
+  - https://advanced.name/freeproxy?page=7
+  - https://advanced.name/freeproxy?page=8
+  - https://advanced.name/freeproxy?page=9
+  - https://advanced.name/freeproxy?page=10
+  - https://scrape-it.cloud/free-proxy-list
+  - https://www.proxynova.com/proxy-server-list/country-bd/
+  - https://www.proxynova.com/proxy-server-list/country-br/
+  - https://www.proxynova.com/proxy-server-list/country-cl/
+  - https://www.proxynova.com/proxy-server-list/country-cn/
+  - https://www.proxynova.com/proxy-server-list/country-co/
+  - https://www.proxynova.com/proxy-server-list/country-fr/
+  - https://www.proxynova.com/proxy-server-list/country-de/
+  - https://www.proxynova.com/proxy-server-list/country-hk/
+  - https://www.proxynova.com/proxy-server-list/country-in/
+  - https://www.proxynova.com/proxy-server-list/country-id/
+  - https://www.proxynova.com/proxy-server-list/country-jp/
+  - https://www.proxynova.com/proxy-server-list/country-ke/
+  - https://www.proxynova.com/proxy-server-list/country-nl/
+  - https://www.proxynova.com/proxy-server-list/country-pl/
+  - https://www.proxynova.com/proxy-server-list/country-ru/
+  - https://www.proxynova.com/proxy-server-list/country-rs/
+  - https://www.proxynova.com/proxy-server-list/country-kr/
+  - https://www.proxynova.com/proxy-server-list/country-tw/
+  - https://www.proxynova.com/proxy-server-list/country-th/
+  - https://www.proxynova.com/proxy-server-list/country-ua/
+  - https://www.proxynova.com/proxy-server-list/country-gb/
+  - https://www.proxynova.com/proxy-server-list/country-us/
+  - https://www.proxynova.com/proxy-server-list/country-ve/
+  - https://www.proxynova.com/proxy-server-list/country-ir/
+  - https://www.proxynova.com/proxy-server-list/country-tr/
+  - https://www.proxynova.com/proxy-server-list/country-na/
+  - https://www.proxynova.com/proxy-server-list/country-mz/
+  - https://www.proxynova.com/proxy-server-list/country-it/
+  - https://www.proxynova.com/proxy-server-list/country-eg/
+  - https://www.proxynova.com/proxy-server-list/country-bg/
+  - https://free-proxy-list.net/
+  - https://www.socks-proxy.net/
+  - https://www.us-proxy.org/
+  - https://free-proxy-list.net/uk-proxy.html
+  - https://www.sslproxies.org/
+  - https://free-proxy-list.net/anonymous-proxy.html
+  - https://openproxy.space/list/http
+  - https://openproxy.space/list/socks5
+  - https://openproxy.space/list/socks4
+  - https://www.proxyscan.io/

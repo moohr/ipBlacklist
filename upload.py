@@ -1,5 +1,7 @@
 import os
 import requests
+
+
 def create_list(headers, account_id):
     url = "https://api.cloudflare.com/client/v4/" + "accounts/" + account_id + "/rules/lists"
     data = {
