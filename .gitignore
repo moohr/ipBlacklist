@@ -1,1 +1,5 @@
 .idea/*
+list.txt
+__pycache__/*
+.venv/*
+

@@ -1,4 +1,5 @@
 upload: False
+check: False #enable with caution!
 sources:
   - https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt
   - https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt
