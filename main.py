@@ -6,8 +6,8 @@ import checker
 import upload
 import tqdm.asyncio
 
-ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}:\d{1,5}\b'
-#ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
+#ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}:\d{1,5}\b'
+ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
 iplist = []
 
 
@@ -33,6 +33,12 @@ async def main():
     results = await tqdm.asyncio.tqdm.gather(*tasks)
     for result in results:
         await get_ips(result)
+    if config["policy"] == "BySubnet":
+        temp = []
+        for ip in iplist:
+            temp.append('.'.join(ip.split('.')[:3]) + '.0/24')
+        iplist.clear()
+        iplist.extend(temp)
     deduped = set(iplist)
     print("Total IPs:", len(deduped))
     if config["check"]:
